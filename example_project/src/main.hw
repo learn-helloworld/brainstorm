@@ -1,0 +1,23 @@
+%<doc = "
+
+= Example
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+".trim()>
+
+TYPE PayloadValue = String | Boolean | Number | Payload | List<PayloadValue>;
+TYPE Payload = Mapping<String, PayloadValue>;
+
+FUNC add(a: Number, b: Number) -> Number {
+    <= a + b;
+}
+
+FUNC main(a: String, b; String) -> none {
+    a: Number =.convert();
+    b: Number =.convert();
+    
+    std.println(add(2, 10));
+}

@@ -1,6 +1,3 @@
 = My Example Project
 
-HelloWorld uses https://asciidoc.org[AsciiDoc] for documentation. If no README file in the root directory of the Project
-exists
-
-... TODO ...
+HelloWorld uses https://asciidoc.org[AsciiDoc] for documentation. Every project should have a `README.adoc` file.

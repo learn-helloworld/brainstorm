@@ -1,6 +1,0 @@
-[project]
-name = "example"
-version = "1.0.0"
-authors = ["John Doe <john.doe@example.org>"]
-keywords = []
-categries = ["CLI"]

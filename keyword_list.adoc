@@ -3,11 +3,26 @@
 `AFUN`::
 Define a new anonymous function.
 
+`ATOM`::
+Defina a new atom.
+
 `AUTO`::
 _reserved_
 
+`ELSE` _<block>_::
+Executes a block when the previous expression of `WHEN` returned `false`.
+
+`ENUM`::
+Define a new enum.
+
+`EXIT` _[name]_::
+Break out of a loop.
+
 `FUNC`::
 Define a new function.
+
+`HARM` _<block>_::
+Define or execute harmful code.
 
 `IMPL` _<function or generator>_ `INTO` _<class>_::
 Implement a function/generator for a class.
@@ -18,8 +33,14 @@ _reserved_
 `ITER`::
 Define a generator.
 
+`JUMP _[name]_`::
+Jump to the beginning of a loop.
+
 `LOAD` _<module or module's attribute>_::
 Load a module or an attribute of a module.
+
+`LOOP` _<block>_::
+Infinitely executes a block.
 
 `MAKE` _<class name>_::
 Define a new class.
@@ -32,3 +53,6 @@ Make a function/generator/class/type/... private.
 
 `TYPE` _<name>_ `=` _<type>_::
 Define a type alias.
+
+`WHEN` _<expression>_ _<block>_::
+Executes a block when an expression returns `true`.

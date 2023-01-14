@@ -1,0 +1,6 @@
+= Brainstorm
+Jonas da Silva
+:description: 🧠💡 Brainstorming & Ideas
+:repo-url: https://github.com/learn-helloworld/brainstorm
+
+This repository contains random files that contain ideas on how to design the language.

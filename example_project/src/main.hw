@@ -11,6 +11,24 @@ sea takimata sanctus est Lorem ipsum dolor sit amet.
 TYPE PayloadValue = String | Boolean | Number | Payload | List<PayloadValue>;
 TYPE Payload = Mapping<String, PayloadValue>;
 
+%<doc = "
+
+Adds two numbers.
+
+This function adds two numbers by using the `+` operator.
+
+= Example
+
+[,helloworld]
+----
+LOAD example.add;
+
+//% eval
+add(1, 3)
+//% end eval
+----
+
+".trim()>
 FUNC add(a: Number, b: Number) -> Number {
     <= a + b;
 }

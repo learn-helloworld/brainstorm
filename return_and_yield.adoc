@@ -8,7 +8,11 @@
   `pass:[<=] x;` appends `x` and returns the buffer without executing anymore code in the current function. `pass:[<=];` will return the
   buffer without appending anything and `pass:[<=] None;` will append `None` to the buffer and returns it.
 * (`ITER`) Yield the value.
-`Block Tail`::
+`<~` _<value>_::
+* (`FUNC`) The "early return" is similar to the `pass:[<-]` arrow. The difference is that in this case the buffer is not
+  a list but a single value. The buffer is overriden when a `pass:[<-]` is encountered and vice versa.
+* (`ITER`) This is not available inside a generator.
+Block Tail::
 * A block tail is an expression at the end of a block `{ ... }` which does not end with a semicolon. The result of the
   expression will be the rusult of the block.
 * A block tail cannot be used with a `pass:[<-]`.

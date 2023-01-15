@@ -1,0 +1,6 @@
+// MAKE Integer(self, n: std.Integer) { self.n = n };
+
+MAKE Integer;
+Integer.n: std.Integer<validate = { x >= -1 }>;
+
+IMPL FUNC times(self, block: Block) -> None { 0..self.n }.each():_:{ block.exec() };

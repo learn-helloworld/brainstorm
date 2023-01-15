@@ -1,0 +1,36 @@
+a: Integer; // int
+a = 42;
+a = 0;
+a = -42;
+
+b: Float;
+b = 0.5;
+b = -7.0;
+b = 20.;
+
+c: Boolean; // bool
+c = true;
+c = false;
+
+d: String; // str
+d = "Hello, World!";
+d = "a";
+d = "";
+
+e: Character; // char
+e = 'a';
+e = '';
+
+f: Number; // num
+f = 0;
+f = -2.8;
+
+g: List;
+g = (8, 'x');
+g = ();
+g = (6, 9, 'x',);
+
+h: Iterable;
+h = ();
+h = (8, 1);
+h = { ITER 

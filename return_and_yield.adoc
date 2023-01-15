@@ -1,8 +1,49 @@
 = Return & Yield
 
+`pass:[<=]` _<value>_::
+* (`FUNC`) Return the value without executing anymore code in the current function.
+* (`ITER`) Yield the value without executing anymore code in the current generator.
+`pass:[<-]` _<value>_::
+* (`FUNC`) Append a buffer with this value. The buffer is returned when the execution of the function is done. The statement
+  `<= x;` appends `x` and returns the buffer without executing anymore code in the current function. `<=;` will return the
+  buffer without appending anything and `<= None;` will append `None` to the buffer and returns it.
+* (`ITER`) Yield the value.
+
+
 [,helloworld]
 ----
-FUNC count() {
-    
+FUNC count() -> List<Integer> {
+    <- 1;
+    <- 2;
+    <- 3;
+    <- 4;
+    <- 5;
+}
+----
+
+This is the same as the following.
+
+[,helloworld]
+----
+FUNC count() -> List<Integer> {
+    result = ();
+    result =
+      .append(1)
+      .append(2)
+      .append(3)
+      .append(4)
+      .append(5);
+    <= result;
+}
+----
+
+[,helloworld]
+----
+ITER count() -> Integer {
+    <- 1;
+    <- 2;
+    <- 3;
+    <- 4;
+    <- 5;
 }
 ----

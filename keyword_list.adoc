@@ -1,7 +1,7 @@
 = A List of Keywords
 
 `AFUN`::
-Define a new anonymous function.
+Define a new asynchronous function.
 
 `ATOM`::
 Defina a new atom.
@@ -44,6 +44,9 @@ Infinitely executes a block.
 
 `MAKE` _<class name>_::
 Define a new class.
+
+`META`::
+Define a new macro.
 
 `PRIV`::
 Make a function/generator/class/type/... private.

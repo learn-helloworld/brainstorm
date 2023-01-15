@@ -5,8 +5,8 @@
 * (`ITER`) Yield the value without executing anymore code in the current generator.
 `pass:[<-]` _<value>_::
 * (`FUNC`) Append a buffer with this value. The buffer is returned when the execution of the function is done. The statement
-  `<= x;` appends `x` and returns the buffer without executing anymore code in the current function. `<=;` will return the
-  buffer without appending anything and `<= None;` will append `None` to the buffer and returns it.
+  `pass:[<=] x;` appends `x` and returns the buffer without executing anymore code in the current function. `pass:[<=];` will return the
+  buffer without appending anything and `pass:[<=] None;` will append `None` to the buffer and returns it.
 * (`ITER`) Yield the value.
 
 

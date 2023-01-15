@@ -9,3 +9,12 @@ FUNC add(a: Integer, b: Integer) -> Integer { a + b }
 ----
 
 `{ a + b }` is a block in this case.
+
+[,helloworld]
+----
+w: Integer = :x,y:{ 1 }; /// ???
+x: Block = { 1 };
+y: Integer = ANON FUNC () { 1 } ();
+z: Integer = { 1 }!;
+----
+

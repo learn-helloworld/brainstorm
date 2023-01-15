@@ -1,0 +1,11 @@
+= Blocks
+
+A block is defined with curly braces (`{}`). Blocks are usually used with functions, generators and if-else
+statements/expressions.
+
+[,helloworld]
+----
+FUNC add(a: Integer, b: Integer) -> Integer { a + b }
+----
+
+`{ a + b }` is a block in this case.

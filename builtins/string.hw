@@ -1,0 +1,34 @@
+MAKE String;
+IMPL * FROM Iterable;
+
+IMPL FUNC
+    wrap(self) => String,
+    fmt(self, *args: Any, **kwargs: Any) => String,
+    repl(self, key: String, value: String) => String,
+    #chars(self) => Integer,
+    #lines(self) => Integer,
+    trim_left(self) => String,
+    trim_right(self) => String,
+    trim(self) => String,
+    utf8?(self) => Boolean,
+    utf16?(self) => Boolean,
+    ascii?(self) => Boolean,
+    lcase?(self) => Boolean,
+    ucase?(self) => Boolean,
+    lower(self) => String,
+    upper(self) => String,
+    remove_prefix(self, prefix: String) => String,
+    remove_suffix(self, prefix: String) => String,
+    starts_with?(self, string: String) => Boolean,
+    ends_with?(self, string: String) => Boolean,
+    contains_string?(self, string: String) => Boolean,
+    concat(self, *string: String) => String,
+    keyword?(self) => Boolean,
+    as_boolean(self) => [Boolean],
+INTO String;
+
+IMPL ITER
+    split(self, string: String) -> String,
+    chars(self) -> Character,
+    lines(self) -> String,
+INTO String;

@@ -1,12 +1,17 @@
 a: Integer; // int
 a = 42;
 a = 0;
+a = +8;
 a = -42;
+a = @C0FFEE;
 
 b: Float;
 b = 0.5;
 b = -7.0;
 b = 20.;
+b = Float.inf();
+b = -Float.inf();
+b = Float.nan();
 
 c: Boolean; // bool
 c = true;
@@ -16,6 +21,10 @@ d: String; // str
 d = "Hello, World!";
 d = "a";
 d = "";
+d = #"a raw" {string}"#;
+d = F"a {c}";
+multiline
+string";
 
 e: Character; // char
 e = 'a';
@@ -38,3 +47,5 @@ h = { <= { <= ITER h() -> { <- *(1, 2, 3) } }(); }
 i: Range;
 i = 0..5;
 i = 0e..5i;
+
+

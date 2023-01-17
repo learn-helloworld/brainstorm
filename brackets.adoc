@@ -1,3 +1,22 @@
 = Angle `<>`, Curly `{}`, Square `[]` and Round `()` Brackets in HelloWorld VS other languages
 
-TODO ...
+[cols="1,1,1"]
+|===
+|Brackets |HelloWorld |Other Languages
+
+| `<>`
+| Type Generic
+| Type Attributes
+
+| `{}`
+| Block
+| Block / Mapping
+
+| `[]`
+| Optional Type
+| Array / Indexing
+
+| `()`
+| List
+| Tuple / Grouping
+|===

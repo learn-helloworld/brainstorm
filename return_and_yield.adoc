@@ -5,12 +5,15 @@
 * (`ITER`) Yield the value without executing anymore code in the current generator.
 `pass:[<-]` _<value>_::
 * (`FUNC`) Append a buffer with this value. The buffer is returned when the execution of the function is done. The statement
-  `pass:[<=] x;` appends `x` and returns the buffer without executing anymore code in the current function. `pass:[<=];` will return the
-  buffer without appending anything and `pass:[<=] None;` will append `None` to the buffer and returns it.
+  `pass:[<=] x;` appends `x` and returns the buffer without executing anymore code in the current function. `pass:[<=];`
+  will return the buffer without appending anything and `pass:[<=] None;` will append `None` to the buffer and returns it.
+  The type of the buffer is always some sort of collection and varies depending on the return type of the function. By default
+  this is `List<Any>`.
 * (`ITER`) Yield the value.
 `<~` _<value>_::
 * (`FUNC`) The "early return" is similar to the `pass:[<-]` arrow. The difference is that in this case the buffer is not
-  a list but a single value. The buffer is overriden when a `pass:[<-]` is encountered and vice versa.
+  a list but a single value. The buffer is overriden when a `pass:[<-]` is encountered and vice versa. `pass:[<=];` will
+  return the buffer without executing anymore code in the current function.
 * (`ITER`) This is not available inside a generator.
 Block Tail::
 * A block tail is an expression at the end of a block `{ ... }` which does not end with a semicolon. The result of the
@@ -19,7 +22,7 @@ Block Tail::
 
 
 
-All the snippets are roughly the same.
+All the snippets below are roughly the same.
 
 [,helloworld]
 ----

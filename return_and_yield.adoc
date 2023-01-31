@@ -21,7 +21,7 @@ Block Tail::
 * A block tail cannot be used with a `pass:[<-]`.
 
 
-It is recommended to mix these too much inside a function. If it becomes too complex and unreadable consider using `when`
+It is recommended to not mix these too much inside a function. If it becomes too complex and unreadable consider using `when`
 and/or lists.
 
 All the snippets below are roughly the same.

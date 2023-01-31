@@ -22,13 +22,14 @@ d = "Hello, World!";
 d = "a";
 d = "";
 d = #"a raw" {string}"#;
-d = F"a {c}";
+d = F"a formatted {c}
 multiline
 string";
 
 e: Character; // char
 e = 'a';
 e = '';
+e = F'{mhm.to_char()}'
 
 f: Number; // num
 f = 0;

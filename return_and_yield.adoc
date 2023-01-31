@@ -21,6 +21,8 @@ Block Tail::
 * A block tail cannot be used with a `pass:[<-]`.
 
 
+It is recommended to mix these too much inside a function. If it becomes too complex and unreadable consider using `when`
+and/or lists.
 
 All the snippets below are roughly the same.
 
@@ -37,7 +39,7 @@ FUNC count() -> List<Integer> {
 
 [,helloworld]
 ----
-FUNC count() -> List<Integer> {
+FUNC count() => List<Integer> {
     result = ();
     result =
       .append(1)
